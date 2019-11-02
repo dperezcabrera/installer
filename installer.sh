@@ -19,7 +19,7 @@ function prepare() {
 function main() {
 	prepare
 	git clone $REPO "$DIR/lab"
-	"$DIR/lab/install-services.sh"
+	"$DIR/lab/install.sh"
 }
 
 main "$@"
