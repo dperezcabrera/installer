@@ -1,13 +1,10 @@
 #! /bin/bash
 
-if [ $# -ne 1 ];then
-  echo "Error: usage: $0 <repo>"
-  exit 1
-fi
-
 wget -O - https://raw.githubusercontent.com/dperezcabrera/installer/master/installer.sh | bash
 
-REPO=https://github.com/dperezcabrera/$1.git
+REPOSITORY="${REPOSITORY:-lab}"
+
+REPO=https://github.com/dperezcabrera/$REPOSITORY.git
 DIR=/tmp/temp_lab
 
 function prepare() {
