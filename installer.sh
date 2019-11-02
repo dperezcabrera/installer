@@ -1,6 +1,6 @@
 #! /bin/bash
 
-wget -O - https://raw.githubusercontent.com/dperezcabrera/installer/master/installer.sh | bash
+# wget -O - https://raw.githubusercontent.com/dperezcabrera/installer/master/installer.sh | bash
 
 REPOSITORY="${REPOSITORY:-lab}"
 
